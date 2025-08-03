@@ -10,3 +10,10 @@ This is a fictitious website created purely for academic purposes as part of a w
 - Imagery and layout reflect a clean, non-distracting visual experience.
 
 ## 🧭 Structure
+
+## 📛 Meta & Bot Control
+
+All HTML pages include the following meta tag inside the `<head>` to block search engine indexing after content loads:
+
+```html
+<meta name="robots" content="noindex, nofollow">
