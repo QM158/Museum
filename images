@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Collections</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="top-banner">Our Collections</header>
+
+  <nav class="navigation">
+    <button onclick="location.href='../index.html'">Home</button>
+    <button onclick="location.href='staff.html'">Staff</button>
+    <button onclick="location.href='collections.html'">Collections</button>
+  </nav>
+
+  <main class="collection-nav">
+    <button>Archeology</button>
+    <button>Anthropology</button>
+    <button>History</button>
+  </main>
+
+  <footer class="bottom-banner">
+    This is a fictitious website created purely for academic purposes.<br>
+    AI contributed to planning and code styling.
+  </footer>
+</body>
+</html>
 
