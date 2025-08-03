@@ -1,1 +1,37 @@
-# Museum
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>New Dawn Museum</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('images/Museum1.JPG'); background-size: cover; background-position: center;">
+  <header class="top-banner">New Dawn Museum</header>
+
+  <nav class="navigation">
+    <button onclick="location.href='html/staff.html'">Staff</button>
+    <button onclick="location.href='html/collections.html'">Collections</button>
+  </nav>
+
+  <main class="three-columns">
+    <section>
+      <h2>Exhibitions</h2>
+      <p>A glimpse into cultures and eras that shaped today.</p>
+    </section>
+    <section>
+      <h2>Innovation</h2>
+      <p>We use VR and AR tools to engage learners across ages.</p>
+    </section>
+    <section>
+      <h2>Community</h2>
+      <p>Where curiosity meets connection.</p>
+    </section>
+  </main>
+
+  <footer class="bottom-banner">
+    This is a fictitious website created purely for academic purposes.<br>
+    Portions of this site were crafted with the help of AI.
+  </footer>
+</body>
+</html>
