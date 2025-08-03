@@ -17,3 +17,5 @@ All HTML pages include the following meta tag inside the `<head>` to block searc
 
 ```html
 <meta name="robots" content="noindex, nofollow">
+User-agent: *
+Disallow: /
