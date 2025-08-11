@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museum Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .souvenir-card img {
+      cursor: pointer;
+      object-fit: cover;
+      height: 200px;
+    }
+    .price {
+      font-weight: bold;
+      color: #007BFF;
+    }
+    .navbar-nav .nav-link.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Museum</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+          <li class="nav-item"><a class="nav-link active" href="souvenirs.html">Souvenirs</a></li>
+          <li class="nav-item"><a class="nav-link" href="personas.html">Staff</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Souvenir Shop</h1>
+    <div class="row g-4">
+
+      <!-- Item 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card souvenir-card h-100" data-id="item001" title="Replica of the Starbone Fossil">
+          <img src="images/souvenirs/starbone-totem-replica.png" class="card-img-top" alt="Starbone Totem Replica" onclick="openModal(this)">
+          <div class="card-body">
+            <h5 class="card-title">Starbone Totem</h5>
+            <p class="card-text">From Deep Ur Collection — Fossilized bone, excavated near ceremonial site. Used in priestly rites.</p>
+            <p class="price">$24.99</p>
+            <!-- <button class="btn btn-primary w-100" onclick="addToCart('item001')">Add Starbone Totem to Cart</button> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card souvenir-card h-100" data-id="item002" title="Scent of the Coral Queen incense, crafted in the style of Deep Ur priests.">
+          <img src="images/souvenirs/sand-oracle-tablet.png" class="card-img-top" alt="Sand Oracle tablet" onclick="openModal(this)">
+          <div class="card-body">
+            <h5 class="card-title">Coral Queen Incense</h5>
+            <p class="card-text">From Deep Ur Collection — Coral resin blend, found in temple ruins. Used in purification rituals.</p>
+            <p class="price">$14.50</p>
+            <!-- <button class="btn btn-primary w-100" onclick="addToCart('item002')">Add Coral Queen Incense to Cart</button> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card souvenir-card h-100" data-id="item003" title="Echoes of the Sky Loom — woven in the style of the Cloud Dwellers.">
+          <img src="images/souvenirs/clay-oil-lamp.png" class="card-img-top" alt="Clay Oil Lamp" onclick="openModal(this)">
+          <div class="card-body">
+            <h5 class="card-title">Sky Loom Textile</h5>
+            <p class="card-text">From Cloud Dweller Collection — Woven linen, found in cliffside tomb. Symbol of celestial passage.</p>
+            <p class="price">$39.00</p>
+            <!-- <button class="btn btn-primary w-100" onclick="addToCart('item003')">Add Sky Loom Textile to Cart</button> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card souvenir-card h-100" data-id="item004" title="Whispers of the Sand Oracle — etched in obsidian.">
+          <img src="images/souvenirs/ancestral-mask.png" class="card-img-top" alt="ancestral mask" onclick="openModal(this)">
+          <div class="card-body">
+            <h5 class="card-title">Sand Oracle Tablet</h5>
+            <p class="card-text">From Obsidian Dune Collection — Obsidian tablet, found in desert shrine. Used for divination.</p>
+            <p class="price">$29.75</p>
+            <!-- <button class="btn btn-primary w-100" onclick="addToCart('item004')">Add Sand Oracle Tablet to Cart</button> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
