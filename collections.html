@@ -1,202 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Museum Personas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .photo-img {
-      max-width: 95%;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-  </style>
-  
+  <link href="styles.css" rel="stylesheet">
+ 
+
 </head>
+
 <body>
 
-<div class="container">
- <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Museum</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="collections.html">Collections</a></li>
-          <li class="nav-item"><a class="nav-link" href="souvenirs.html">Souvenirs</a></li>
-          <li class="nav-item"><a class="nav-link" href="personas.html">Staff</a></li>
-        </ul>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Museum</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="collections.html">Collections</a></li>
+            <li class="nav-item"><a class="nav-link" href="souvenirs.html">Souvenirs</a></li>
+            <li class="nav-item"><a class="nav-link" href="personas.html">Staff</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="text-center mb-4">
+      <a href="#archaeology" class="btn btn-outline-primary mx-2">Archaeology</a>
+      <a href="#anthropology" class="btn btn-outline-success mx-2">Anthropology</a>
+      <a id="histories" onclick="toggleHistories()" class="btn btn-outline-info mx-2">Histories</a>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <p>This is a ficticious website created purely for academic purposes. The content on this site was conceived by
+          a human and created by Al. The Images were created by Al and curated, edited, reviewed, verified, validated,
+          and augmented by a human.</p>
+          <p><strong>Note:</strong> you can click on each image to see more information on each item.</p>
       </div>
     </div>
-  </nav>
-<div class="text-center mb-4">
-  <a href="#archaeology" class="btn btn-outline-primary mx-2">Archaeology</a>
-  <a href="#anthropology" class="btn btn-outline-success mx-2">Anthropology</a>
-</div>
 
-<div class="row align-items-center">
-    <div class="col-md-12">
-        <p>This is a ficticious website created purely for academic purposes. The content on this site was conceived by a human and created by Al. The Images were created by Al and curated, edited, reviewed, verified, validated, and augmented by a human.</p>
+
+    <h1 class="section-title"> Our collection</h1>
+
+    <h2 class="section-title" id="archaeology"> Archaeology</h2>
+
+    <!-- Fertility Figurine -->
+    <div class="row bio-section align-items-center" id="fertility-figurine">
+      <div class="col-md-6">
+        <img src="images/collections/fertility-figurine.png" onclick="openPopup('fertility-figurine')"
+          alt="Fertility Figurine" class="photo-img">
+      </div>
+      <div class="col-md-6">
+        <div class="bio-card">
+          <h3>Fertility Figurine</h3>
+          <div class="facts">
+            <p><strong>Material:</strong> Carved limestone or clay composite</p>
+            <p><strong>Size/Weight/Shape:</strong> ~15 cm tall; rounded hips, tapered legs, faceless head</p>
+            <p><strong>Physical Properties:</strong> Smooth surface, incised torso patterns, stable base</p>
+            <p><strong>Estimated Age:</strong> ~6,500 years BP; inferred from stratigraphy and typology</p>
+            <p><strong>Preservation State:</strong> Complete; minor surface erosion</p>
+            <p><strong>Location Found:</strong> Buried near skeletal remains, Tell Kurgan site, Austria (47.5162° N,
+              14.5501° E)</p>
+            <p><strong>Likely Purpose:</strong> Ceremonial object symbolizing fertility or divine femininity</p>
+            <p><strong>Evidence of Use:</strong> No wear marks; context suggests ritual placement</p>
+            <p><strong>Manufacture Clues:</strong> Hand-carved; symmetrical form; incised geometric motifs</p>
+            <p><strong>Found With:</strong> Human skull, bone fragments, charcoal traces</p>
+            <p><strong>Burial or Habitat Context:</strong> Ritual burial pit within domestic layer</p>
+            <p><strong>Symbolism:</strong> Fertility, motherhood, regeneration; abstract divine identity</p>
+            <p><strong>Comparison:</strong> Similar to Venus figurines from Willendorf and Çatalhöyük</p>
+          </div>
+          <div class="cultural-phase hidden">
+            <p><strong>Cultural Phase:</strong> Believed to originate from the Late Neolithic “Kurganic Hearth” phase, a
+              transitional period marked by matrilineal clan structures and seasonal fertility rites.</p>
+          </div>
+
+          <div class="excavator-notes hidden">
+            <p><strong>Excavator Notes:</strong> “When I brushed away the soil and saw her silhouette emerge, I felt a
+              strange hush settle over the trench. It was as if the earth itself had been holding its breath.” — Dr.
+              Lena Voss, 1997</p>
+          </div>
+
+          <div class="interpretive-tension hidden">
+            <p><strong>Interpretive Tension:</strong> Though widely interpreted as a fertility icon, the absence of
+              facial features and presence of burial remains suggest possible funerary or ancestral significance,
+              complicating its symbolic role.</p>
+          </div>
+
+          <div class="local-lore hidden">
+            <p><strong>Legends or Local Lore:</strong> In nearby villages, elders speak of “The Earthmother of Kurgan,”
+              a stone woman who guards the bones of the forgotten and blesses the fields when honored with silence.</p>
+          </div>
+
+          <div class="access-warnings hidden">
+            <p><strong>Access Warnings:</strong> Some local traditions advise against touching the figurine directly,
+              citing ancestral taboos and stories of misfortune befalling those who disturb her resting place.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neolithic Stone Dagger -->
+    <div class="row bio-section align-items-center flex-md-row-reverse" id="stone-dagger">
+      <div class="col-md-6">
+        <img src="images/collections/stone-dagger.png" onclick="openPopup('stone-dagger')" alt="Neolithic Stone Dagger"
+          class="photo-img">
+      </div>
+      <div class="col-md-6">
+        <div class="bio-card">
+          <h3>Neolithic Stone Dagger</h3>
+          <div class="facts">
+            <p><strong>Material:</strong> Polished flint or chert</p>
+            <p><strong>Size/Weight/Shape:</strong> ~20 cm long; leaf-shaped blade; flared guard</p>
+            <p><strong>Physical Properties:</strong> Sharp edges; glossy surface; symmetrical profile</p>
+            <p><strong>Estimated Age:</strong> ~5,000 years BP; typologically dated</p>
+            <p><strong>Preservation State:</strong> Pristine; no visible damage</p>
+            <p><strong>Location Found:</strong> Grave context, Hallstatt region, Austria</p>
+            <p><strong>Likely Purpose:</strong> Ceremonial weapon or status symbol</p>
+            <p><strong>Evidence of Use:</strong> No wear; possibly unused in combat</p>
+            <p><strong>Manufacture Clues:</strong> Pressure flaking; polished finish; ergonomic grip</p>
+            <p><strong>Found With:</strong> Bronze beads, ceramic shards, ochre traces</p>
+            <p><strong>Burial or Habitat Context:</strong> Elite tomb with grave goods</p>
+            <p><strong>Symbolism:</strong> Prestige, protection, warrior identity</p>
+            <p><strong>Comparison:</strong> Comparable to Alpine daggers from the Pfyn culture</p>
+          </div>
+          <div class="cultural-phase hidden">
+            <p><strong>Cultural Phase:</strong> Attributed to the “Sunblade Horizon,” a ceremonial epoch within the Late
+              Neolithic Hallstatt continuum, where elite warriors were buried with symbolic weapons to guide them into
+              the
+              afterlife.</p>
+          </div>
+
+          <div class="excavator-notes hidden">
+            <p><strong>Excavator Notes:</strong> “The dagger lay untouched, gleaming as if freshly made. I felt a
+              strange
+              reverence—as though I had interrupted a vigil that had lasted five millennia.” — Prof. Elias Brenner, 2003
+            </p>
+          </div>
+
+          <div class="interpretive-tension hidden">
+            <p><strong>Interpretive Tension:</strong> Though its pristine condition suggests ceremonial use, the blade’s
+              lethal sharpness and ergonomic grip imply it was fully functional—raising questions about the boundary
+              between ritual and readiness.</p>
+          </div>
+
+          <div class="local-lore hidden">
+            <p><strong>Legends or Local Lore:</strong> Local folklore speaks of the “Blade of the Silent Chief,” said to
+              belong to a warrior who never spoke but led with unmatched clarity. Some say the dagger hums faintly when
+              held in silence.</p>
+          </div>
+
+          <div class="access-warnings hidden">
+            <p><strong>Access Warnings:</strong> Regional traditions caution against unsheathing replicas of the dagger
+              during solstice rites, citing ancestral unrest and tales of spectral warriors appearing in mist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Geometric Ceramic Vessel -->
+    <div class="row bio-section align-items-center" id="ceramic-vessel">
+      <div class="col-md-6">
+        <img src="images/collections/ceramic-vessel.png" onclick="openPopup('ceramic-vessel')"
+          alt="Geometric Ceramic Vessel" class="photo-img">
+      </div>
+      <div class="col-md-6">
+        <div class="bio-card">
+          <h3>Geometric Ceramic Vessel</h3>
+          <div class="facts">
+            <p><strong>Material:</strong> Fired clay with mineral temper</p>
+            <p><strong>Size/Weight/Shape:</strong> ~25 cm tall; rounded body; wide mouth</p>
+            <p><strong>Physical Properties:</strong> Matte surface; incised chevron patterns</p>
+            <p><strong>Estimated Age:</strong> ~4,000 years BP; inferred from ceramic typology</p>
+            <p><strong>Preservation State:</strong> Partial; minor rim damage</p>
+            <p><strong>Location Found:</strong> Midden layer, Danube Valley site</p>
+            <p><strong>Likely Purpose:</strong> Storage of grains or liquids</p>
+            <p><strong>Evidence of Use:</strong> Soot residue on base; interior abrasion</p>
+            <p><strong>Manufacture Clues:</strong> Wheel-thrown; incised before firing</p>
+            <p><strong>Found With:</strong> Animal bones, grinding stones</p>
+            <p><strong>Burial or Habitat Context:</strong> Domestic refuse layer</p>
+            <p><strong>Symbolism:</strong> Chevron motifs may indicate clan or seasonal cycles</p>
+            <p><strong>Comparison:</strong> Similar to Vučedol and Baden culture ceramics</p>
+            <p><strong>Cultural Phase:</strong> Associated with the “Riverborn Cycle,” a transitional phase in the
+              Danubian
+              Neolithic marked by seasonal migration and clan-based resource sharing.</p>
+          </div>
+        </div>
+
+        <div class="excavator-notes hidden">
+          <p><strong>Excavator Notes:</strong> “The vessel emerged from the soil like a memory—its patterns still sharp,
+            its body still strong. It felt less like a discarded object and more like a whisper from the hearth.” — Dr.
+            Mirela Kovács, 2011</p>
+        </div>
+
+        <div class="interpretive-tension hidden">
+          <p><strong>Interpretive Tension:</strong> Though found in a refuse layer, the vessel’s intricate design and
+            careful construction suggest symbolic or ritual importance, challenging assumptions about its mundane use.
+          </p>
+        </div>
+
+        <div class="local-lore hidden">
+          <p><strong>Legends or Local Lore:</strong> Regional tales speak of “The Vessel of Echoes,” said to hum softly
+            when filled with river water during solstice. Some believe it carries ancestral voices tied to the chevron
+            markings.</p>
+        </div>
+
+        <div class="access-warnings hidden">
+          <p><strong>Access Warnings:</strong> Local elders caution against displaying the vessel upside down, citing
+            stories of misfortune and disrupted seasonal cycles in nearby villages.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="anthropology"> Anthropology</h2>
+
+    <!-- Geometric-Patterned Ceramic -->
+    <div class="row bio-section align-items-center flex-md-row-reverse" id="patterned-ceramic">
+      <div class="col-md-6">
+        <img src="images/collections/patterned-ceramic.png" onclick="openPopup('patterned-ceramic')"
+          alt="Geometric-Patterned Ceramic" class="photo-img">
+      </div>
+      <div class="col-md-6">
+        <div class="bio-card">
+          <h3>Geometric-Patterned Ceramic</h3>
+          <div class="facts">
+            <p><strong>Material:</strong> Burnished clay with mineral inclusions</p>
+            <p><strong>Size/Weight/Shape:</strong> ~18 cm diameter; bowl-like form</p>
+            <p><strong>Physical Properties:</strong> Smooth finish; etched triangles and lines</p>
+            <p><strong>Estimated Age:</strong> ~3,800 years BP; stratigraphic dating</p>
+            <p><strong>Preservation State:</strong> Nearly complete; minor base chipping</p>
+            <p><strong>Location Found:</strong> Excavation trench B, Salzburg basin</p>
+            <p><strong>Likely Purpose:</strong> Serving or ritual offering vessel</p>
+            <p><strong>Evidence of Use:</strong> Faint residue; interior discoloration</p>
+            <p><strong>Manufacture Clues:</strong> Hand-built; incised post-drying</p>
+            <p><strong>Found With:</strong> Charcoal, shell beads, ash layer</p>
+            <p><strong>Burial or Habitat Context:</strong> Hearth zone in domestic dwelling</p>
+            <p><strong>Symbolism:</strong> Geometric patterns may reflect cosmological beliefs</p>
+            <p><strong>Comparison:</strong> Echoes motifs from Bell Beaker ceramics</p>
+          </div>
+
+          <div class="cultural-phase">
+            <p><strong>Cultural Phase:</strong> Associated with the “Riverborn Cycle,” a transitional phase in the
+              Danubian Neolithic marked by seasonal migration and clan-based resource sharing.</p>
+          </div>
+
+          <div class="excavator-notes">
+            <p><strong>Excavator Notes:</strong> “The vessel emerged from the soil like a memory—its patterns still
+              sharp, its body still strong. It felt less like a discarded object and more like a whisper from the
+              hearth.” — Dr. Mirela Kovács, 2011</p>
+          </div>
+
+          <div class="interpretive-tension">
+            <p><strong>Interpretive Tension:</strong> Though found in a refuse layer, the vessel’s intricate design and
+              careful construction suggest symbolic or ritual importance, challenging assumptions about its mundane use.
+            </p>
+          </div>
+
+          <div class="local-lore">
+            <p><strong>Legends or Local Lore:</strong> Regional tales speak of “The Vessel of Echoes,” said to hum
+              softly when filled with river water during solstice. Some believe it carries ancestral voices tied to the
+              chevron markings.</p>
+          </div>
+
+          <div class="access-warnings">
+            <p><strong>Access Warnings:</strong> Local elders caution against displaying the vessel upside down, citing
+              stories of misfortune and disrupted seasonal cycles in nearby villages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prehistoric Stone Hand Axe -->
+    <div class="row bio-section align-items-center" id='stone-axe'>
+      <div class="col-md-6">
+        <img src="images/collections/stone-hand-axe.png" onclick="openPopup('stone-axe')"
+          alt="Prehistoric Stone Hand Axe" class="photo-img">
+      </div>
+      <div class="col-md-6">
+        <div class="bio-card">
+          <h3>Prehistoric Stone Hand Axe</h3>
+          <div class="facts">
+            <p><strong>Material:</strong> Basalt or flint</p>
+            <p><strong>Size/Weight/Shape:</strong> ~12 cm long; teardrop shape</p>
+            <p><strong>Physical Properties:</strong> Rough surface; flaked edges; dense core</p>
+            <p><strong>Estimated Age:</strong> ~250,000 years BP; contextually dated</p>
+            <p><strong>Preservation State:</strong> Complete; edge wear visible</p>
+            <p><strong>Location Found:</strong> Cave layer, Moravian Karst</p>
+            <p><strong>Likely Purpose:</strong> Cutting, scraping, general tool use</p>
+            <p><strong>Evidence of Use:</strong> Edge dulling; micro-polish on grip</p>
+            <p><strong>Manufacture Clues:</strong> Bifacial flaking; no hafting</p>
+            <p><strong>Found With:</strong> Faunal remains, charcoal, bone tools</p>
+            <p><strong>Burial or Habitat Context:</strong> Occupation layer in cave shelter</p>
+            <p><strong>Symbolism:</strong> Likely utilitarian; no symbolic markings</p>
+            <p><strong>Comparison:</strong> Matches Acheulean hand axes from Europe</p>
+            <p><strong>Cultural Phase:</strong> Believed to belong to the “Silent Epoch,” a Paleolithic phase marked
+              by nomadic cave-dwelling communities and early tool standardization across Europe.</p>
+          </div>
+        </div>
+
+        <div class="excavator-notes hidden">
+          <p><strong>Excavator Notes:</strong> “It was nestled in ash and bone, as if placed deliberately. Holding
+            it, I felt the weight of repetition—of hands that shaped and used it long before language.” — Dr.
+            Tomasz
+            Varga, 2007</p>
+        </div>
+
+        <div class="interpretive-tension hidden">
+          <p><strong>Interpretive Tension:</strong> Though clearly utilitarian, its placement among symbolic
+            faunal
+            arrangements suggests possible ritual deposition, challenging assumptions about early cognitive
+            boundaries.</p>
+        </div>
+
+        <div class="local-lore hidden">
+          <p><strong>Legends or Local Lore:</strong> Locals refer to it as “The Ember Fang,” believed to be a
+            relic
+            of the first fire-bringers. Some say it was forged in the heart of a thunderstone and passed down
+            through generations of cave guardians.</p>
+        </div>
+
+        <div class="access-warnings hidden">
+          <p><strong>Access Warnings:</strong> Regional folklore warns against displaying the axe near open flame,
+            citing tales of sudden cave collapses and ancestral unrest stirred by its exposure.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bronze Axe Head -->
+    <div class="row bio-section align-items-center flex-md-row-reverse" id="bronze-axe">
+      <div class="col-md-6">
+        <img src="images/collections/bronze-axe-head.png" onclick="openPopup('bronze-axe')" alt="Bronze Axe Head"
+          class="photo-img">
+      </div>
+      <div class="col-md-6">
+        <div class="bio-card">
+          <h3>Bronze Axe Head</h3>
+          <div class="facts">
+            <p><strong>Material:</strong> Cast bronze alloy with copper and tin</p>
+            <p><strong>Size/Weight/Shape:</strong> ~16 cm long; crescent blade; tubular socket</p>
+            <p><strong>Physical Properties:</strong> Dense metal; green-blue patina; smooth blade edge</p>
+            <p><strong>Estimated Age:</strong> ~3,200 years BP; carbon-dated organic hafting residue</p>
+            <p><strong>Preservation State:</strong> Complete; minor corrosion and pitting</p>
+            <p><strong>Location Found:</strong> Burial mound near Krems, Austria; coordinates 48.411° N, 15.606° E</p>
+            <p><strong>Likely Purpose:</strong> Ceremonial weapon or elite tool</p>
+            <p><strong>Evidence of Use:</strong> Polished blade edge; hafting wear near socket</p>
+            <p><strong>Manufacture Clues:</strong> Mold seams; decorative engraving; socketed design</p>
+            <p><strong>Found With:</strong> Bronze pins, amber beads, textile fragments</p>
+            <p><strong>Burial or Habitat Context:</strong> Elite grave within fortified settlement</p>
+            <p><strong>Symbolism:</strong> Status, power, and martial identity; possibly ritualized warfare</p>
+            <p><strong>Comparison:</strong> Similar to Urnfield culture axe heads and Nordic ceremonial blades</p>
+            <p><strong>Cultural Phase:</strong> Linked to the “Sunforge Ascendancy,” a late Bronze Age phase
+              characterized
+              by fortified hilltop settlements, elite warrior classes, and symbolic metallurgy rituals.</p>
+          </div>
+        </div>
+
+        <div class="excavator-notes hidden">
+          <p><strong>Excavator Notes:</strong> “The axe was nestled among amber and cloth, like a relic of a
+            vanished
+            oath. Its blade shimmered faintly in the soil—less a tool, more a declaration.” — Dr. Anika Roth, 2015
+          </p>
+        </div>
+
+        <div class="interpretive-tension hidden">
+          <p><strong>Interpretive Tension:</strong> Though clearly functional, the ornate engravings and burial
+            context
+            suggest it was never wielded in battle—raising questions about the performative nature of Bronze Age
+            warfare.</p>
+        </div>
+
+        <div class="local-lore hidden">
+          <p><strong>Legends or Local Lore:</strong> Known in regional folklore as “The Crescent Fang,” said to
+            belong
+            to a warrior-priest who could cleave thunder and command silence. Some tales claim the axe sings when
+            moonlight strikes its edge.</p>
+        </div>
+
+        <div class="access-warnings hidden">
+          <p><strong>Access Warnings:</strong> Local tradition forbids replicas from being displayed near burial
+            sites,
+            citing ancestral unrest and stories of dreams haunted by metallic whispers.</p>
+        </div>
+      </div>
     </div>
   </div>
-
-
-  <h1 class="section-title"> Our collection</h1>
-
- <h2 class="section-title" id="archaeology"> Archaeology</h2>
-
-<!-- Fertility Figurine -->
-<div class="row bio-section align-items-center">
-  <div class="col-md-6">
-    <img src="images/collections/fertility-figurine.png" alt="Fertility Figurine" class="photo-img">
-  </div>
-  <div class="col-md-6">
-    <div class="bio-card">
-      <h3>Fertility Figurine</h3>
-      <p><strong>Material:</strong> Carved limestone or clay composite</p>
-      <p><strong>Size/Weight/Shape:</strong> ~15 cm tall; rounded hips, tapered legs, faceless head</p>
-      <p><strong>Physical Properties:</strong> Smooth surface, incised torso patterns, stable base</p>
-      <p><strong>Estimated Age:</strong> ~6,500 years BP; inferred from stratigraphy and typology</p>
-      <p><strong>Preservation State:</strong> Complete; minor surface erosion</p>
-      <p><strong>Location Found:</strong> Buried near skeletal remains, Tell Kurgan site, Austria (47.5162° N, 14.5501° E)</p>
-      <p><strong>Likely Purpose:</strong> Ceremonial object symbolizing fertility or divine femininity</p>
-      <p><strong>Evidence of Use:</strong> No wear marks; context suggests ritual placement</p>
-      <p><strong>Manufacture Clues:</strong> Hand-carved; symmetrical form; incised geometric motifs</p>
-      <p><strong>Found With:</strong> Human skull, bone fragments, charcoal traces</p>
-      <p><strong>Burial or Habitat Context:</strong> Ritual burial pit within domestic layer</p>
-      <p><strong>Symbolism:</strong> Fertility, motherhood, regeneration; abstract divine identity</p>
-      <p><strong>Comparison:</strong> Similar to Venus figurines from Willendorf and Çatalhöyük</p>
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">×</button>
+      <h2>Title</h2>
+      <h3>Facts</h3>
+      <div id="popupfacts"></div>
+      <h3>Interpretive Facts</h3>
+      <p id="access-warnings-fact"></p>
+      <p id="local-lore-fact"></p>
+      <p id="interpretive-tension-fact"></p>
+      <p id="excavator-notes-fact"></p>
     </div>
   </div>
-</div>
+  <script>
+    function openPopup(name) {
+      var popup = document.getElementById('popup')
+      var item = document.getElementById(name)
+      popup.querySelector('h2').innerText = item.querySelector('h3').innerText
+      document.getElementById('popupfacts').innerHTML = item.querySelector('.facts').innerHTML
 
-<!-- Neolithic Stone Dagger -->
-<div class="row bio-section align-items-center flex-md-row-reverse">
-  <div class="col-md-6">
-    <img src="images/collections/stone-dagger.png" alt="Neolithic Stone Dagger" class="photo-img">
-  </div>
-  <div class="col-md-6">
-    <div class="bio-card">
-      <h3>Neolithic Stone Dagger</h3>
-      <p><strong>Material:</strong> Polished flint or chert</p>
-      <p><strong>Size/Weight/Shape:</strong> ~20 cm long; leaf-shaped blade; flared guard</p>
-      <p><strong>Physical Properties:</strong> Sharp edges; glossy surface; symmetrical profile</p>
-      <p><strong>Estimated Age:</strong> ~5,000 years BP; typologically dated</p>
-      <p><strong>Preservation State:</strong> Pristine; no visible damage</p>
-      <p><strong>Location Found:</strong> Grave context, Hallstatt region, Austria</p>
-      <p><strong>Likely Purpose:</strong> Ceremonial weapon or status symbol</p>
-      <p><strong>Evidence of Use:</strong> No wear; possibly unused in combat</p>
-      <p><strong>Manufacture Clues:</strong> Pressure flaking; polished finish; ergonomic grip</p>
-      <p><strong>Found With:</strong> Bronze beads, ceramic shards, ochre traces</p>
-      <p><strong>Burial or Habitat Context:</strong> Elite tomb with grave goods</p>
-      <p><strong>Symbolism:</strong> Prestige, protection, warrior identity</p>
-      <p><strong>Comparison:</strong> Comparable to Alpine daggers from the Pfyn culture</p>
-    </div>
-  </div>
-</div>
+      var notes = ['excavator-notes', 'access-warnings', 'local-lore', 'interpretive-tension']
+      for (var i = 0; i < notes.length; i++) {
+        const match = item.querySelector('.' + notes[i]);
+        document.getElementById([notes[i] + '-fact']).innerHTML = match.innerHTML
+      }
 
-<!-- Geometric Ceramic Vessel -->
-<div class="row bio-section align-items-center">
-  <div class="col-md-6">
-    <img src="images/collections/ceramic-vessel.png" alt="Geometric Ceramic Vessel" class="photo-img">
-  </div>
-  <div class="col-md-6">
-    <div class="bio-card">
-      <h3>Geometric Ceramic Vessel</h3>
-      <p><strong>Material:</strong> Fired clay with mineral temper</p>
-      <p><strong>Size/Weight/Shape:</strong> ~25 cm tall; rounded body; wide mouth</p>
-      <p><strong>Physical Properties:</strong> Matte surface; incised chevron patterns</p>
-      <p><strong>Estimated Age:</strong> ~4,000 years BP; inferred from ceramic typology</p>
-      <p><strong>Preservation State:</strong> Partial; minor rim damage</p>
-      <p><strong>Location Found:</strong> Midden layer, Danube Valley site</p>
-      <p><strong>Likely Purpose:</strong> Storage of grains or liquids</p>
-      <p><strong>Evidence of Use:</strong> Soot residue on base; interior abrasion</p>
-      <p><strong>Manufacture Clues:</strong> Wheel-thrown; incised before firing</p>
-      <p><strong>Found With:</strong> Animal bones, grinding stones</p>
-      <p><strong>Burial or Habitat Context:</strong> Domestic refuse layer</p>
-      <p><strong>Symbolism:</strong> Chevron motifs may indicate clan or seasonal cycles</p>
-      <p><strong>Comparison:</strong> Similar to Vučedol and Baden culture ceramics</p>
-    </div>
-  </div>
-</div>
+      document.getElementById('popup').classList.add('active');
+    }
 
-<h2 class="section-title" id="anthropology"> Anthropology</h2>
+    function closePopup() {
+      document.getElementById('popup').classList.remove('active');
+    }
 
-<!-- Geometric-Patterned Ceramic -->
-<div class="row bio-section align-items-center flex-md-row-reverse">
-  <div class="col-md-6">
-    <img src="images/collections/patterned-ceramic.png" alt="Geometric-Patterned Ceramic" class="photo-img">
-  </div>
-  <div class="col-md-6">
-    <div class="bio-card">
-      <h3>Geometric-Patterned Ceramic</h3>
-      <p><strong>Material:</strong> Burnished clay with mineral inclusions</p>
-      <p><strong>Size/Weight/Shape:</strong> ~18 cm diameter; bowl-like form</p>
-      <p><strong>Physical Properties:</strong> Smooth finish; etched triangles and lines</p>
-      <p><strong>Estimated Age:</strong> ~3,800 years BP; stratigraphic dating</p>
-      <p><strong>Preservation State:</strong> Nearly complete; minor base chipping</p>
-      <p><strong>Location Found:</strong> Excavation trench B, Salzburg basin</p>
-      <p><strong>Likely Purpose:</strong> Serving or ritual offering vessel</p>
-      <p><strong>Evidence of Use:</strong> Faint residue; interior discoloration</p>
-      <p><strong>Manufacture Clues:</strong> Hand-built; incised post-drying</p>
-      <p><strong>Found With:</strong> Charcoal, shell beads, ash layer</p>
-      <p><strong>Burial or Habitat Context:</strong> Hearth zone in domestic dwelling</p>
-      <p><strong>Symbolism:</strong> Geometric patterns may reflect cosmological beliefs</p>
-      <p><strong>Comparison:</strong> Echoes motifs from Bell Beaker ceramics</p>
-    </div>
-  </div>
-</div>
+    function toggleHistories() {
+      var notes = ['excavator-notes', 'access-warnings', 'local-lore', 'interpretive-tension']
+      for (var i = 0; i < notes.length; i++) {
+        const match = document.querySelector('.' + notes[i]);
+        if (match.classList.contains('hidden')) {
+          match.classList.remove('hidden')
+        } else {
+          match.classList.add('hidden')
+        }
+      }
 
-<!-- Prehistoric Stone Hand Axe -->
-<div class="row bio-section align-items-center">
-  <div class="col-md-6">
-    <img src="images/collections/stone-hand-axe.png" alt="Prehistoric Stone Hand Axe" class="photo-img">
-  </div>
-  <div class="col-md-6">
-    <div class="bio-card">
-      <h3>Prehistoric Stone Hand Axe</h3>
-      <p><strong>Material:</strong> Basalt or flint</p>
-      <p><strong>Size/Weight/Shape:</strong> ~12 cm long; teardrop shape</p>
-      <p><strong>Physical Properties:</strong> Rough surface; flaked edges; dense core</p>
-      <p><strong>Estimated Age:</strong> ~250,000 years BP; contextually dated</p>
-      <p><strong>Preservation State:</strong> Complete; edge wear visible</p>
-      <p><strong>Location Found:</strong> Cave layer, Moravian Karst</p>
-      <p><strong>Likely Purpose:</strong> Cutting, scraping, general tool use</p>
-      <p><strong>Evidence of Use:</strong> Edge dulling; micro-polish on grip</p>
-      <p><strong>Manufacture Clues:</strong> Bifacial flaking; no hafting</p>
-      <p><strong>Found With:</strong> Faunal remains, charcoal, bone tools</p>
-      <p><strong>Burial or Habitat Context:</strong> Occupation layer in cave shelter</p>
-      <p><strong>Symbolism:</strong> Likely utilitarian; no symbolic markings</p>
-      <p><strong>Comparison:</strong> Matches Acheulean hand axes from Europe</p>
-    </div>
-  </div>
-
-  <!-- Bronze Axe Head -->
-<div class="row bio-section align-items-center flex-md-row-reverse">
-  <div class="col-md-6">
-    <img src="images/collections/bronze-axe-head.png" alt="Bronze Axe Head" class="photo-img">
-  </div>
-  <div class="col-md-6">
-    <div class="bio-card">
-      <h3>Bronze Axe Head</h3>
-      <p><strong>Material:</strong> Cast bronze alloy with copper and tin</p>
-      <p><strong>Size/Weight/Shape:</strong> ~16 cm long; crescent blade; tubular socket</p>
-      <p><strong>Physical Properties:</strong> Dense metal; green-blue patina; smooth blade edge</p>
-      <p><strong>Estimated Age:</strong> ~3,200 years BP; carbon-dated organic hafting residue</p>
-      <p><strong>Preservation State:</strong> Complete; minor corrosion and pitting</p>
-      <p><strong>Location Found:</strong> Burial mound near Krems, Austria; coordinates 48.411° N, 15.606° E</p>
-      <p><strong>Likely Purpose:</strong> Ceremonial weapon or elite tool</p>
-      <p><strong>Evidence of Use:</strong> Polished blade edge; hafting wear near socket</p>
-      <p><strong>Manufacture Clues:</strong> Mold seams; decorative engraving; socketed design</p>
-      <p><strong>Found With:</strong> Bronze pins, amber beads, textile fragments</p>
-      <p><strong>Burial or Habitat Context:</strong> Elite grave within fortified settlement</p>
-      <p><strong>Symbolism:</strong> Status, power, and martial identity; possibly ritualized warfare</p>
-      <p><strong>Comparison:</strong> Similar to Urnfield culture axe heads and Nordic ceremonial blades</p>
-    </div>
-  </div>
-</div>
-</div>
+    }
+  </script>
 </body>
-</html>
 
+</html>
