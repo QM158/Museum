@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Museum Shop</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="cart.js"></script>
+  <link href="styles.css" rel="stylesheet">
   <style>
     .souvenir-card img {
       cursor: pointer;
       object-fit: cover;
       height: 200px;
     }
+
     .price {
       font-weight: bold;
       color: #007BFF;
     }
+
     .navbar-nav .nav-link.active {
       font-weight: bold;
       text-decoration: underline;
     }
+
+    .qty-badge {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #333;
+      font-weight: 600;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -34,7 +48,10 @@
           <li class="nav-item"><a class="nav-link active" href="souvenirs.html">Souvenirs</a></li>
           <li class="nav-item"><a class="nav-link" href="personas.html">Staff</a></li>
         </ul>
+        <button onclick="openCart()" id="viewCartBtn" class="btn btn-outline-light ms-auto">View
+          Cart</button>
       </div>
+    </div>
     </div>
   </nav>
 
@@ -46,11 +63,17 @@
       <!-- Item 1 -->
       <div class="col-md-6 col-lg-3">
         <div class="card souvenir-card h-100" data-id="item001" title="Replica of the Starbone Fossil">
-          <img src="images/souvenirs/starbone-totem-replica.png" class="card-img-top" alt="Starbone Totem Replica" onclick="openModal(this)">
+          <img src="images/souvenirs/starbone-totem-replica.png" class="card-img-top" alt="Starbone Totem Replica"
+            onclick="openModal(this)">
           <div class="card-body">
             <h5 class="card-title">Starbone Totem</h5>
-            <p class="card-text">From Deep Ur Collection — Fossilized bone, excavated near ceremonial site. Used in priestly rites.</p>
-            <p class="price">$24.99</p>
+            <p class="card-text">From Deep Ur Collection — Fossilized bone, excavated near ceremonial site. Used in
+              priestly rites.</p>
+            <p class="price">Price:$24.99</p>
+            <button class="btn btn-primary w-100" id="item001" data-name="Starbone Totem" data-price="24.99"
+              data-image="images/souvenirs/starbone-totem-replica.png" onclick="addToCart(this)">Add Starbone Totem
+              Replica</button>
+            <span class="qty-badge" aria-live="polite"></span>
             <!-- <button class="btn btn-primary w-100" onclick="addToCart('item001')">Add Starbone Totem to Cart</button> -->
           </div>
         </div>
@@ -58,12 +81,19 @@
 
       <!-- Item 2 -->
       <div class="col-md-6 col-lg-3">
-        <div class="card souvenir-card h-100" data-id="item002" title="Scent of the Coral Queen incense, crafted in the style of Deep Ur priests.">
-          <img src="images/souvenirs/sand-oracle-tablet.png" class="card-img-top" alt="Sand Oracle tablet" onclick="openModal(this)">
+        <div class="card souvenir-card h-100" data-id="item002"
+          title="Scent of the Coral Queen incense, crafted in the style of Deep Ur priests.">
+          <img src="images/souvenirs/sand-oracle-tablet.png" class="card-img-top" alt="Sand Oracle tablet"
+            onclick="openModal(this)">
           <div class="card-body">
             <h5 class="card-title">Coral Queen Incense</h5>
-            <p class="card-text">From Deep Ur Collection — Coral resin blend, found in temple ruins. Used in purification rituals.</p>
-            <p class="price">$14.50</p>
+            <p class="card-text">From Deep Ur Collection — Coral resin blend, found in temple ruins. Used in
+              purification rituals.</p>
+            <p class="price">Price:$14.50</p>
+            <button class="btn btn-primary w-100" id="item002" data-name="Coral Queen Incense" data-price="14.50"
+              data-image="images/souvenirs/sand-oracle-tablet.png" onclick="addToCart(this)">Add Sand Oracle
+              tablet</button>
+            <span class="qty-badge" aria-live="polite"></span>
             <!-- <button class="btn btn-primary w-100" onclick="addToCart('item002')">Add Coral Queen Incense to Cart</button> -->
           </div>
         </div>
@@ -71,12 +101,18 @@
 
       <!-- Item 3 -->
       <div class="col-md-6 col-lg-3">
-        <div class="card souvenir-card h-100" data-id="item003" title="Echoes of the Sky Loom — woven in the style of the Cloud Dwellers.">
-          <img src="images/souvenirs/clay-oil-lamp.png" class="card-img-top" alt="Clay Oil Lamp" onclick="openModal(this)">
+        <div class="card souvenir-card h-100" data-id="item003"
+          title="Echoes of the Sky Loom — woven in the style of the Cloud Dwellers.">
+          <img src="images/souvenirs/clay-oil-lamp.png" class="card-img-top" alt="Clay Oil Lamp"
+            onclick="openModal(this)">
           <div class="card-body">
             <h5 class="card-title">Sky Loom Textile</h5>
-            <p class="card-text">From Cloud Dweller Collection — Woven linen, found in cliffside tomb. Symbol of celestial passage.</p>
-            <p class="price">$39.00</p>
+            <p class="card-text">From Cloud Dweller Collection — Woven linen, found in cliffside tomb. Symbol of
+              celestial passage.</p>
+            <p class="price">Price:$39.00</p>
+            <button class="btn btn-primary w-100" id="item003" data-name="Sky Loom Textile" data-price="39.00"
+              data-image="images/souvenirs/clay-oil-lamp.png" onclick="addToCart(this)">Add Sky Loom Textile</button>
+            <span class="qty-badge" aria-live="polite"></span>
             <!-- <button class="btn btn-primary w-100" onclick="addToCart('item003')">Add Sky Loom Textile to Cart</button> -->
           </div>
         </div>
@@ -84,12 +120,18 @@
 
       <!-- Item 4 -->
       <div class="col-md-6 col-lg-3">
-        <div class="card souvenir-card h-100" data-id="item004" title="Whispers of the Sand Oracle — etched in obsidian.">
-          <img src="images/souvenirs/ancestral-mask.png" class="card-img-top" alt="ancestral mask" onclick="openModal(this)">
+        <div class="card souvenir-card h-100" data-id="item004"
+          title="Whispers of the Sand Oracle — etched in obsidian.">
+          <img src="images/souvenirs/ancestral-mask.png" class="card-img-top" alt="ancestral mask"
+            onclick="openModal(this)">
           <div class="card-body">
             <h5 class="card-title">Sand Oracle Tablet</h5>
-            <p class="card-text">From Obsidian Dune Collection — Obsidian tablet, found in desert shrine. Used for divination.</p>
-            <p class="price">$29.75</p>
+            <p class="card-text">From Obsidian Dune Collection — Obsidian tablet, found in desert shrine. Used for
+              divination.</p>
+            <p class="price">Price:$29.75</p>
+            <button class="btn btn-primary w-100" id="item004" data-name="Sand Oracle Tablet" data-price="29.75"
+              data-image="images/souvenirs/ancestral-mask.png" onclick="addToCart(this)">Add Sand Oracle Tablet</button>
+            <span class="qty-badge" aria-live="polite"></span>
             <!-- <button class="btn btn-primary w-100" onclick="addToCart('item004')">Add Sand Oracle Tablet to Cart</button> -->
           </div>
         </div>
@@ -98,6 +140,27 @@
     </div>
   </main>
 
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closeCart()">×</button>
+      <h2>Cart</h2>
+      <input type="checkbox" id="memberCheckbox" onchange="render()"/>
+      <label class="form-check-label" for="memberCheckbox">✅ Member</label>
+      <div id="cartContainer"/>
+  </div>
+  <script>
+    function openCart() {
+      document.getElementById('popup').classList.add('active');
+    }
+
+    function closeCart() {
+      document.getElementById('popup').classList.remove('active');
+    }
+
+    render();
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
